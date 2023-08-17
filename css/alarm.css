@@ -52,6 +52,19 @@
   background-color: red;
 }
 
+.main .iphone .line {
+  position: absolute;
+  bottom: 20px;
+  right: 32%;
+  background: #fff;
+  width: 120px;
+  height: 5px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 400px) {
   .main .iphone .alarm h2 {
     font-size: 40px;
