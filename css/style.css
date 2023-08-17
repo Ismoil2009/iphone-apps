@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: url(https://img.freepik.com/premium-photo/natural-marble-pattern-background_1258-22160.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .iphone {
+  width: 350px;
+  height: 580px;
+  background: #000;
+  border-radius: 30px;
+  padding: 12px;
+  position: relative;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+@media (max-width: 400px) {
+  .main .iphone {
+    width: 260px;
+    height: 450px;
+  }
+}
+
+.main .iphone .menu {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1663630487487-05d4f899da6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8aXBob25lJTIwMTQlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D&w=1000&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 25px;
+  display: flex;
+  padding: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 400px) {
+  .main .iphone .menu {
+    padding: 10px;
+  }
+}
+
+.main .iphone .menu .clock,
+.main .iphone .menu .alarm,
+.main .iphone .menu .timer,
+.main .iphone .menu .translate {
+  width: 41%;
+  text-align: center;
+  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
+  background: rgba(0, 0, 0, 0);
+  transition: 0.5s;
+}
+
+.main .iphone .menu .clock h3,
+.main .iphone .menu .alarm h3,
+.main .iphone .menu .timer h3,
+.main .iphone .menu .translate h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.main .iphone .menu .clock:hover,
+.main .iphone .menu .alarm:hover,
+.main .iphone .menu .timer:hover,
+.main .iphone .menu .translate:hover {
+  transform: scale(1.1);
+}
+
+.main .iphone .camera {
+  position: absolute;
+  top: 25px;
+  right: 38%;
+  background: #000;
+  width: 80px;
+  height: 25px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}

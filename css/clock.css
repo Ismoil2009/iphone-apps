@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    width: 80%;
+  }
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-image: url(https://img.freepik.com/premium-photo/natural-marble-pattern-background_1258-22160.jpg);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .phone {
+  width: 400px;
+  height: 550px;
+  background: #000;
+  border-radius: 30px;
+  padding: 12px;
+  position: relative;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+@media (max-width: 400px) {
+  .main .phone {
+    width: 260px;
+    height: 450px;
+  }
+}
+
+.main .phone .menu {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://wallpapers.com/images/hd/ios-14-background-z1xq75kn4u36jy0c.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  display: flex;
+  padding: 50px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+@media (max-width: 400px) {
+  .main .phone .menu {
+    padding: 10px;
+  }
+}
+
+.main .phone .camera {
+  position: absolute;
+  top: 25px;
+  right: 40%;
+  background-color: #000;
+  width: 80px;
+  height: 25px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .phone .camera .circle {
+  width: 8px;
+  height: 8px;
+  background: #635c5c;
+  border-radius: 50%;
+}
+
+.main .phone .clock {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main .phone .clock .date {
+  font-size: 26px;
+  color: white;
+  font-weight: bold;
+}
+
+.main .phone .clock .clockTime {
+  margin-top: 40px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+
+.main .phone .clock .clockTime .hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.main .phone .clock .clockTime .hours h3 {
+  font-size: 30px;
+  color: white;
+}
+
+.main .phone .clock .clockTime .hours p {
+  background: rgba(255, 255, 255, 0.614);
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: 100px;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/timer.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="iphone">
+        <div class="camera"></div>
+        <div class="menu timer">
+          <div class="set">
+            <div class="minutes">
+              <label for="minut">Minute</label>
+              <select name="minut" id="minut"></select>
+            </div>
+            <div class="seconds">
+              <label for="second">Second</label>
+              <select name="second" id="second"></select>
+            </div>
+          </div>
+          <div class="setting">
+            <button class="timer-start" onclick="start()">Start</button>
+            <button class="timer-stop" onclick="stop()">Stop</button>
+            <button class="timer-reset" onclick="reset()">Reset</button>
+          </div>
+          <audio
+            class="timer-music"
+            src="alarm.wav"
+          ></audio>
+        </div>
+      </div>
+    </div>
+    <script src="js/timer.js"></script>
+  </body>
+</html>

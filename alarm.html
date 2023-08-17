@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alarm</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/alarm.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="iphone">
+        <div class="camera"></div>
+        <div class="menu alarm">
+          <h2>Alarm</h2>
+          <input class="time" type="time" value="00:00" />
+          <audio
+            class="alarmSong"
+            src="alarm.wav"
+          ></audio>
+          <p class="set">
+            <button class="start" onclick="getTime()">Set</button>
+            <button class="stop" onclick="stopSong()">Stop</button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/alarm.js"></script>
+  </body>
+</html>
