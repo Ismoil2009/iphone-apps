@@ -1,10 +1,11 @@
-const hourClock = document.querySelector(".hourClock");
-const minutClock = document.querySelector(".minutClock");
-const secundClock = document.querySelector(".secundClock");
+const hourClock = document.querySelector(".hour-clock");
+const minutClock = document.querySelector(".minut-clock");
+const secundClock = document.querySelector(".second-clock");
 const mSecundClock = document.querySelector(".mSecundClock");
 const dateClock = document.querySelector(".date");
 
 let date, hour, minut, secund, mSecund, year, month, day, week, res;
+
 function getDate() {
   date = new Date();
   hour = +date.getHours();
@@ -15,6 +16,7 @@ function getDate() {
   day = +date.getDate();
   week = +date.getDay();
 }
+
 function getInfo() {
   getDate();
   hourClock.textContent = `${hour < 10 ? "0" + hour : hour}`;
@@ -25,7 +27,9 @@ function getInfo() {
   }`;
   dateClock.textContent = res;
 }
+
 getInfo();
+
 setInterval(() => {
   getInfo();
 }, 1000);

@@ -1,32 +1,32 @@
 const time = document.querySelector(".alarm .time");
-const alarmSong = document.querySelector(".alarmSong");
+const alarmSong = document.querySelector(".alarm-song");
 
-let nowTime, nowHour, nowMinut, nowSecond;
+let currentTime, currentHour, curretMinute, currentSecond;
 
 function getDate() {
-  nowTime = new Date();
-  nowHour = +nowTime.getHours();
-  nowMinut = +nowTime.getMinutes();
-  nowSecond = +nowTime.getSeconds();
+  currentTime = new Date();
+  currentHour = +currentTime.getHours();
+  curretMinute = +currentTime.getMinutes();
+  currentSecond = +currentTime.getSeconds();
 }
 
 getDate();
 
-time.value = `${nowHour < 10 ? "0" + nowHour : nowHour}:${
-  nowMinut < 10 ? "0" + nowMinut : nowMinut
+time.value = `${currentHour < 10 ? "0" + currentHour : currentHour}:${
+  curretMinute < 10 ? "0" + curretMinute : curretMinute
 }`;
 
 function getTime() {
   getDate();
 
   let melodyTime = time.value;
-  
+
   melodyTime = melodyTime.split(":");
   melodyTime =
-    (+melodyTime[0] - nowHour) * 3600000 +
-    (+melodyTime[1] - nowMinut) * 60000 -
-    nowSecond * 1000;
-  console.log(melodyTime, nowSecond);
+    (+melodyTime[0] - currentHour) * 3600000 +
+    (+melodyTime[1] - curretMinute) * 60000 -
+    currentSecond * 1000;
+  console.log(melodyTime, currentSecond);
   setTimeout(
     () => {
       alarmSong.play();

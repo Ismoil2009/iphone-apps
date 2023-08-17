@@ -96,7 +96,7 @@
   font-weight: bold;
 }
 
-.main .phone .clock .clockTime {
+.main .phone .clock .clock-time {
   margin-top: 40px;
   display: flex;
   width: 100%;
@@ -106,19 +106,19 @@
   text-align: center;
 }
 
-.main .phone .clock .clockTime .hours {
+.main .phone .clock .clock-time .hours {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 10px;
 }
 
-.main .phone .clock .clockTime .hours h3 {
+.main .phone .clock .clock-time .hours h3 {
   font-size: 30px;
   color: white;
 }
 
-.main .phone .clock .clockTime .hours p {
+.main .phone .clock .clock-time .hours p {
   background: rgba(255, 255, 255, 0.614);
   padding: 5px 10px;
   border-radius: 5px;

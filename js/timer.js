@@ -16,6 +16,7 @@ function getNumber() {
 
 minut.innerHTML = getNumber();
 second.innerHTML = getNumber();
+
 let a = 1;
 
 function stop() {
